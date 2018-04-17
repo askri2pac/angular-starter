@@ -16,14 +16,19 @@ import { AppState } from './app.service';
     './app.component.css'
   ],
   template: `
-    <nav>
+    <nav class="header">
+      <a class="logo">
+        <img src="//static5.pagesjaunes.fr/common/images/logo_pagesjaunes__6868d0.png"
+             alt="Retours accueil Pages Jaunes" width="133"/>
+      </a>
+      <div class="header-left">
       <a [routerLink]=" ['./'] "
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Index
+        pageJaunes
       </a>
       <a [routerLink]=" ['./home'] "
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Home
+        pageBlanches
       </a>
       <a [routerLink]=" ['./detail'] "
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
@@ -33,29 +38,19 @@ import { AppState } from './app.service';
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         Barrel
       </a>
-      <a [routerLink]=" ['./about'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        About
-      </a>
-      <a *ngIf="showDevModule" [routerLink]=" ['./dev-module'] "
-         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        DevModule
-      </a>
+      </div>
+      <div class="header-right">
+        <a [routerLink]=" ['./connexion'] ">
+          Connexion
+        </a>
+      </div>
     </nav>
 
     <main>
       <router-outlet></router-outlet>
     </main>
-
-    <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
-
-    <footer>
-      <span>Angular Starter by <a [href]="twitter">@gdi2290</a></span>
-      <div>
-        <a [href]="url">
-          <img [src]="tipe" width="25%">
-        </a>
-      </div>
+    <footer class="footer">
+      footer
     </footer>
   `
 })
