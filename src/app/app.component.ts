@@ -19,7 +19,7 @@ import { AppState } from './app.service';
     <nav class="header">
       <a class="logo">
         <img src="//static5.pagesjaunes.fr/common/images/logo_pagesjaunes__6868d0.png"
-             alt="Retours accueil Pages Jaunes" width="133"/>
+             alt="Retours accueil Pages Jaunes" width="120"/>
       </a>
       <div class="header-left">
       <a [routerLink]=" ['./'] "
@@ -41,7 +41,7 @@ import { AppState } from './app.service';
       </div>
       <div class="header-right">
         <a [routerLink]=" ['./connexion'] ">
-          Connexion
+          Mon Compte
         </a>
       </div>
     </nav>

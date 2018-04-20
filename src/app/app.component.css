@@ -1,7 +1,7 @@
 html, body{
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  background: url("../assets/img/background.jpg") no-repeat fixed;
+  background: url("../assets/img/blur.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,9 +53,6 @@ nav a {
 .header-left {
   float: left;
 }
-.header-right {
-  float: right;
-}
 
 
 @media screen and (max-width: 500px) {
@@ -66,6 +63,7 @@ nav a {
   }
   .header-right {
     float: none;
+    font-size: 13px;
   }
 }
 .header a {
@@ -74,7 +72,6 @@ nav a {
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 17px;
   line-height: 4px;
   border-radius: 4px;
 }
@@ -88,5 +85,17 @@ nav a {
   float: left;
   padding: 4px 10px;
   opacity: 0.8;
+}
+.header-right {
+  float: right;
+  font-size: 13px!important;
+  margin: 0 116px;
+  width: 12rem;
+}
+.header-right a {
+  margin: 14px 40px;
+}
+.header-right:hover {
+  background-color: #171719;
 }
 
