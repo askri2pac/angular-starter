@@ -93,7 +93,7 @@ nav a {
   width: 12rem;
 }
 .header-right a {
-  margin: 14px 40px;
+  margin: 6px 40px 14px;
 }
 .header-right:hover {
   background-color: #171719;

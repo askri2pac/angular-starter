@@ -15,44 +15,7 @@ import { AppState } from './app.service';
   styleUrls: [
     './app.component.css'
   ],
-  template: `
-    <nav class="header">
-      <a class="logo">
-        <img src="//static5.pagesjaunes.fr/common/images/logo_pagesjaunes__6868d0.png"
-             alt="Retours accueil Pages Jaunes" width="120"/>
-      </a>
-      <div class="header-left">
-      <a [routerLink]=" ['./'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        pageJaunes
-      </a>
-      <a [routerLink]=" ['./home'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        pageBlanches
-      </a>
-      <a [routerLink]=" ['./detail'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Detail
-      </a>
-      <a [routerLink]=" ['./barrel'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Barrel
-      </a>
-      </div>
-      <div class="header-right">
-        <a [routerLink]=" ['./connexion'] ">
-          Mon Compte
-        </a>
-      </div>
-    </nav>
-
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-    <footer class="footer">
-      footer
-    </footer>
-  `
+  templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
   public name = 'Angular Starter';
